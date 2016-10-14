@@ -1,0 +1,113 @@
+h1 {
+    background: #CAEBF2;
+    margin: 0;
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 99999999;
+}
+
+h1 #menuicon {
+    display: inline;
+    float: left;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+
+#spainList{
+    display: none;
+}
+
+body {
+    background: white;
+}
+
+.taskList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.taskList li{
+    font-size: 1.3em;
+    padding: 1em 1em 0.5em 10%;
+    border-bottom: solid 1px lightgrey;
+}
+
+.taskList li:hover {
+    background: lightgrey;
+}
+
+textarea {
+    display: none;
+    height: 50px;
+    width: 71%;
+    border: none;
+    padding: none;
+    margin-left: 14.5%;
+    font-size: 1.3em;
+    line-height: 50px;
+    float: left;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    position: absolute;
+    right:    10px;
+    bottom:   10px;
+    color: white;
+    border: none;
+    padding: none;
+    background: red; /*#38B0DE*/
+    text-align: center;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.button a {
+    width: 10px;
+    height: 10px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+
+.delete {
+    position: absolute;
+    right: 1em;
+    background: none;
+    color: grey;
+    border: none;
+    line-height: 0.5em;
+}
+
+.menu {
+    position: fixed;
+    padding: 0;
+    background-color: lightgrey;
+    width: 60%;
+    height: 567px;
+    padding: none;
+    opacity: 1;
+    box-shadow: 5px 5px 3px grey;
+}
+
+.menuList {
+    padding: 0;
+}
+
+.menuList li{
+    padding-left: 10%;
+    line-height: 60px;
+    text-align: left;
+    font-size: 20px;
+    border-bottom: solid 1px grey;
+    list-style-type: none;
+}

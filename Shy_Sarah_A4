@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>To-Do List App</title>
+    </head>
+
+    <body>
+        <h1>My List</h1>
+        <img id="menuicon" src="images/menu_icon.png" alt="Menu icon" onclick="openMenu()">
+        <div class="menu" style="display:none">
+            <ul class="menuList">
+                <li onclick="goToMyList()">My list</li>
+                <li onclick="goToSpain()">Spain Trip List </li>
+            </ul>
+        </div>
+        <div id = "myList">
+            <ul class = "taskList">
+                <li><input type = "checkbox"> Buy milk<button class = "delete" onclick = "removeTask(this)">x</button></li>
+                <li><input type = "checkbox"> Pick up dry cleaning<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                <li><input type = "checkbox"> Return shoes to Nordstrom<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+            </ul>
+        </div>
+
+        <div id="spainList">
+            <ul class = "taskList">
+                <li><input type = "checkbox"> Pack suitcase<button class = "delete" onclick = "removeTask(this)">x</button></li>
+                <li><input type = "checkbox"> Buy map of Barcelona<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                <li><input type = "checkbox"> Learn Spanish<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+            </ul>
+        </div>
+        <textarea id="newTaskText" onkeyup="if(event.keyCode==13) addNewTask();" placeholder = "Add a new task..."></textarea>
+        <button id = "addTask" class = "button" onclick = "showTextArea()">+</button>
+
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link  rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="myscript.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </body>
+</html>
