@@ -7,6 +7,7 @@ function addNewTask() {
         } else {
     $(".taskList").append($("<li><input type = 'checkbox'> "+text+" </li>").append($("<button onclick = removeTask(this) class = delete>x</button>")));
     clearText();
+    hideTextArea();
     }
 };
 
@@ -14,11 +15,6 @@ function addNewTask() {
 function clearText() {
     document.querySelector("#newTaskText").value = "";
 };
-
-/*function hideTextArea(){
-    $("#newTaskText").hide();
-}*/
-
 
 function removeTask(task) {
     $(task).parent().remove();
@@ -28,11 +24,14 @@ function showTextArea() {
     $("#newTaskText").css("display", "block");
 };
 
+function hideTextArea(){
+    $("#newTaskText").css("display", "none");
+}
+
 function openMenu() {
     $(".menu").toggle("right");
 }
 
-/*DOESN'T WORK text()?*/
 function goToMyList() {
     $("#spainList").hide();
     $("#myList").show();
