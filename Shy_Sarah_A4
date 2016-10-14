@@ -5,8 +5,10 @@
     </head>
 
     <body>
-        <h1>My List</h1>
-        <img id="menuicon" src="images/menu_icon.png" alt="Menu icon" onclick="openMenu()">
+        <div class="header">
+            <h1>My List</h1>
+            <img id="menuicon" src="images/menu_icon.png" alt="Menu icon" onclick="openMenu()">
+        </div>
         <div class="menu" style="display:none">
             <ul class="menuList">
                 <li onclick="goToMyList()">My list</li>
