@@ -1,21 +1,23 @@
 /*HEADER*/
 .header {
+    position: relative;
     background: #CAEBF2;
     margin: 0;
     height: 100px;
     width: 100%;
-    text-align: center;
 }
 
 .header h1 {
     position: relative;
     margin: 0;
     line-height: 100px;
+    text-align: center;
+    font-size: 26px;
 }
 
 #menuicon {
     float: left;
-    margin-left: 5%;
+    /*margin-left: 5%;*/
 }
 
 /*BODY*/
@@ -57,16 +59,28 @@ textarea {
     float: left;
 }
 
+/*MENU*/
 .menu {
-    position: fixed;
+    position: absolute;
+    top: 0;
     padding: 0;
-    /*background-color: #E8E8E8;*/
-    width: 60%;
-    height: 567px;
+    width: 65%;
+    height: 100%;/*567px*/
     padding: none;
     opacity: 1;
     box-shadow: 3px 3px 7px grey;
     background-color: #F2F2F2;
+}
+
+.menuHeading {
+    margin: 0;
+    line-height: 100px;
+    bottom: 0;
+    height: 100px;
+    font-size: 26px;
+    padding-left: 10%;
+    background: #5DB5C8;
+    color: white;
 }
 
 .menuList {

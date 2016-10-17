@@ -44,7 +44,7 @@ function goToMyList() {
     $("#myList").show();
     $("h1").text("My List");
     $("#addTask").show();
-    $(".menu").hide();
+    $(".menu").toggle("left");
 
 }
 
@@ -53,7 +53,7 @@ function goToSpain() {
     $("#spainList").show();
     $("h1").text("Spain Travel List");
     $("#addTask").show();
-    $(".menu").hide();
+    $(".menu").toggle("left");
 }
 
 /*combine goTo fnxs
