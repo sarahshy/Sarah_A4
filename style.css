@@ -60,12 +60,13 @@ textarea {
 .menu {
     position: fixed;
     padding: 0;
-    background-color: lightgrey;
+    /*background-color: #E8E8E8;*/
     width: 60%;
     height: 567px;
     padding: none;
     opacity: 1;
-    box-shadow: 5px 5px 3px grey;
+    box-shadow: 3px 3px 7px grey;
+    background-color: #F2F2F2;
 }
 
 .menuList {
@@ -77,9 +78,15 @@ textarea {
     padding-left: 10%;
     line-height: 60px;
     text-align: left;
-    font-size: 20px;
-    border-bottom: solid 1px grey;
+    font-size: 18px;
     list-style-type: none;
+    font-weight: lighter;
+
+    background: rgb(249,249,249); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(229,229,229,1) 92%, rgba(224,224,224,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(249,249,249,1) 0%,rgba(229,229,229,1) 92%,rgba(224,224,224,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(249,249,249,1) 0%,rgba(229,229,229,1) 92%,rgba(224,224,224,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
 }
 
 /*BUTTONS*/
@@ -117,4 +124,14 @@ textarea {
     border: none;
     line-height: 0.5em;
 }
+
+#newListBtn {
+    padding-left: 10%;
+    line-height: 60px;
+    text-align: left;
+    font-size: 20px;
+    border-bottom: solid 1px grey;
+}
+
+
 

@@ -13,22 +13,26 @@
             <ul class="menuList">
                 <li onclick="goToMyList()">My list</li>
                 <li onclick="goToSpain()">Spain Trip List </li>
+                <li><a href="#" onclick="addNewList">+ New List</a>
             </ul>
+            <!-- <button id="newListBtn">Add a new list</button> -->
         </div>
-        <div id = "myList">
-            <ul class = "taskList">
-                <li><input type = "checkbox"> Buy milk<button class = "delete" onclick = "removeTask(this)">x</button></li>
-                <li><input type = "checkbox"> Pick up dry cleaning<button  class = "delete" onclick = "removeTask(this)">x</button></li>
-                <li><input type = "checkbox"> Return shoes to Nordstrom<button  class = "delete" onclick = "removeTask(this)">x</button></li>
-            </ul>
-        </div>
+        <div id = "allLists">
+            <div>
+                <ul class = "taskList" id = "myList">
+                    <li><input type = "checkbox"> Buy milk<button class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><input type = "checkbox"> Pick up dry cleaning<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><input type = "checkbox"> Return shoes to Nordstrom<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                </ul>
+            </div>
 
-        <div id="spainList">
-            <ul class = "taskList">
-                <li><input type = "checkbox"> Pack suitcase<button class = "delete" onclick = "removeTask(this)">x</button></li>
-                <li><input type = "checkbox"> Buy map of Barcelona<button  class = "delete" onclick = "removeTask(this)">x</button></li>
-                <li><input type = "checkbox"> Learn Spanish<button  class = "delete" onclick = "removeTask(this)">x</button></li>
-            </ul>
+            <div>
+                <ul class = "taskList" id="spainList">
+                    <li><input type = "checkbox"> Pack suitcase<button class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><input type = "checkbox"> Buy map of Barcelona<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><input type = "checkbox"> Learn Spanish<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                </ul>
+            </div>
         </div>
         <textarea id="newTaskText" onkeyup="if(event.keyCode==13) addNewTask();" placeholder = "Add a new task..."></textarea>
         <button id = "addTask" class = "button" onclick = "showTextArea()">+</button>
@@ -38,7 +42,7 @@
         <link  rel="stylesheet" type="text/css" href="style.css">
         <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <script src="myscript.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </body>
 </html>

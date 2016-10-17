@@ -5,7 +5,13 @@ function addNewTask() {
         {
             return false;
         } else {
-    $(".taskList").append($("<li><input type = 'checkbox'> "+text+" </li>").append($("<button onclick = removeTask(this) class = delete>x</button>")));
+/*            if ($("#myList").is(":visible"))
+            {
+                $("#myList").append($("<li><input type = 'checkbox'> "+text+" </li>").append($("<button onclick = removeTask(this) class = delete>x</button>")));
+            } else {
+                $("#spainList").append($("<li><input type = 'checkbox'> "+text+" </li>").append($("<button onclick = removeTask(this) class = delete>x</button>")));
+            };*/
+            $("#allLists .taskList:visible").append($("<li><input type = 'checkbox'> "+text+" </li>").append($("<button onclick = removeTask(this) class = delete>x</button>")));
     clearText();
     hideTextArea();
     }
@@ -29,20 +35,28 @@ function hideTextArea(){
 }
 
 function openMenu() {
+    $("#addTask").hide();
     $(".menu").toggle("right");
 }
 
 function goToMyList() {
-    $("#spainList").hide();
+    $("#allLists .taskList:visible").hide();
     $("#myList").show();
     $("h1").text("My List");
+    $("#addTask").show();
     $(".menu").hide();
 
 }
 
 function goToSpain() {
-    $("#myList").hide();
+    $("#allLists .taskList:visible").hide();
     $("#spainList").show();
     $("h1").text("Spain Travel List");
+    $("#addTask").show();
     $(".menu").hide();
 }
+
+/*combine goTo fnxs
+function switchList() {
+    $("#allLists .taskList:visible").hide();
+}*/
