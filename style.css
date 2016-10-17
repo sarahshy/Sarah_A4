@@ -16,8 +16,10 @@
 }
 
 #menuicon {
+    position: absolute;
     float: left;
-    /*margin-left: 5%;*/
+    margin-top: -60px;
+    margin-left: 10px;
 }
 
 /*BODY*/
@@ -94,7 +96,6 @@ textarea {
     text-align: left;
     font-size: 18px;
     list-style-type: none;
-    font-weight: lighter;
 
     background: rgb(249,249,249); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(249,249,249,1) 0%, rgba(229,229,229,1) 92%, rgba(224,224,224,1) 100%); /* FF3.6-15 */
