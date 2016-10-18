@@ -11,29 +11,37 @@
         </div>
         <div class="menu" style="display:none">
 
-            <h2 class = "menuHeading">Your lists:
+            <h2 class = "menuHeading">Your travel lists:
             <button id="closeMenuBtn" onclick="closeMenu()">x</button></h2>
             <ul class="menuList">
-                <li onclick="goToMyList()">My list</li>
-                <li onclick="goToSpain()">Spain Trip List </li>
-                <li><a href="#" onclick="addNewList">+ New List</a>
+                <li onclick="goToList(arizonaList)">Arizona Road Trip</li>
+                <li onclick="goToList(spainList)">Barcelona Winter Trip</li>
+                <li onclick="goToList(futureList)">Future Trips</li>
+<!--                 <li><a href="#" onclick="showMenuTextArea()">+ New List</a></li>
+                    <textarea id="newListText" onkeyup="if(event.keyCode==13) addNewList();" placeholder="Add a new list..."></textarea> -->
             </ul>
-            <!-- <button id="newListBtn">Add a new list</button> -->
         </div>
         <div id = "allLists">
             <div>
-                <ul class = "taskList" id = "myList">
-                    <li><input type = "checkbox"> Buy milk<button class = "delete" onclick = "removeTask(this)">x</button></li>
-                    <li><input type = "checkbox"> Pick up dry cleaning<button  class = "delete" onclick = "removeTask(this)">x</button></li>
-                    <li><input type = "checkbox"> Return shoes to Nordstrom<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                <ul class = "taskList" id = "arizonaList">
+                    <li><label><input type = "checkbox"> Pick up Arizona travel guide</label><button class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><label><input type = "checkbox"> Stock car with snacks</label><button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><label><input type = "checkbox"> Charge camera</label><button  class = "delete" onclick = "removeTask(this)">x</button></li>
                 </ul>
             </div>
 
             <div>
                 <ul class = "taskList" id="spainList">
-                    <li><input type = "checkbox"> Pack suitcase<button class = "delete" onclick = "removeTask(this)">x</button></li>
-                    <li><input type = "checkbox"> Buy map of Barcelona<button  class = "delete" onclick = "removeTask(this)">x</button></li>
-                    <li><input type = "checkbox"> Learn Spanish<button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><label><input type = "checkbox"> Pack suitcases</label><button class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><label><input type = "checkbox"> Buy map of Barcelona</label><button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><label><input type = "checkbox"> Learn Spanish</label><button  class = "delete" onclick = "removeTask(this)">x</button></li>
+                    <li><label><input type = "checkbox"> Renew passports</label><button class = "delete" onclick = "removeTas(this)">x</button></li>
+                </ul>
+            </div>
+
+            <div>
+                <ul class = "taskList" id = "futureList">
+                    <li><label><input type = "checkbox"> Puerto Rico (without the kids)</label><button class = "delete" onclick = "removeTask(this)">x</button></li>
                 </ul>
             </div>
         </div>

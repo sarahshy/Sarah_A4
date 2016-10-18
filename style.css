@@ -28,7 +28,11 @@ body {
 }
 
 
-#spainList{
+#spainList {
+    display: none;
+}
+
+#futureList {
     display: none;
 }
 
@@ -79,7 +83,7 @@ textarea {
     line-height: 100px;
     bottom: 0;
     height: 100px;
-    font-size: 26px;
+    font-size: 24px;
     padding-left: 10%;
     background: #5DB5C8;
     color: white;
@@ -134,6 +138,7 @@ textarea {
 
 .delete {
     position: absolute;
+
     right: 1em;
     background: none;
     color: grey;
@@ -149,4 +154,15 @@ textarea {
     border-bottom: solid 1px grey;
 }
 
+#newListText {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+} 
+
+label {
+    font-weight: normal;
+}
 
