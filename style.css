@@ -104,27 +104,28 @@ textarea {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
 }
 
+#closeMenuBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+
 /*BUTTONS*/
 .button {
     width: 40px;
     height: 40px;
-    border-radius: 25px;
     position: absolute;
     right:    10px;
     bottom:   10px;
-    color: white;
     border: none;
     padding: none;
-    background: red; /*#38B0DE*/
-    text-align: center;
-    font-size: 28px;
     cursor: pointer;
 }
 
-.button a {
-    width: 10px;
-    height: 10px;
-}
 
 .button:focus {
   outline: none;
@@ -147,6 +148,5 @@ textarea {
     font-size: 20px;
     border-bottom: solid 1px grey;
 }
-
 
 

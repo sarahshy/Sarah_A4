@@ -10,7 +10,9 @@
             <img id="menuicon" src="images/menu_icon.png" onclick="openMenu()">
         </div>
         <div class="menu" style="display:none">
-            <h2 class = "menuHeading">Your lists:</h2>
+
+            <h2 class = "menuHeading">Your lists:
+            <button id="closeMenuBtn" onclick="closeMenu()">x</button></h2>
             <ul class="menuList">
                 <li onclick="goToMyList()">My list</li>
                 <li onclick="goToSpain()">Spain Trip List </li>
@@ -36,7 +38,7 @@
             </div>
         </div>
         <textarea id="newTaskText" onkeyup="if(event.keyCode==13) addNewTask();" placeholder = "Add a new task..."></textarea>
-        <button id = "addTask" class = "button" onclick = "showTextArea()">+</button>
+        <img id="addTask" class = "button" src="images/addtask.png" onclick="showTextArea()">
 
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">

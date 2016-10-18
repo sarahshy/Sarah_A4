@@ -36,7 +36,9 @@ function hideTextArea(){
 
 function openMenu() {
     $("#addTask").hide();
-    $(".menu").toggle("right");
+    // $(".menu").toggle("right");
+    $(".menu").animate({width:'toggle'}, 350);
+
 }
 
 function goToMyList() {
@@ -44,7 +46,8 @@ function goToMyList() {
     $("#myList").show();
     $("h1").text("My List");
     $("#addTask").show();
-    $(".menu").toggle("left");
+    // $(".menu").toggle("left");
+    $(".menu").animate({width:'toggle'}, 350);
 
 }
 
@@ -53,9 +56,14 @@ function goToSpain() {
     $("#spainList").show();
     $("h1").text("Spain Travel List");
     $("#addTask").show();
-    $(".menu").toggle("left");
+    // $(".menu").toggle("left");
+    $(".menu").animate({width:'toggle'}, 350);
+
 }
 
+function closeMenu() {
+    $(".menu").animate({width:'toggle'}, 350);
+}
 /*combine goTo fnxs
 function switchList() {
     $("#allLists .taskList:visible").hide();
