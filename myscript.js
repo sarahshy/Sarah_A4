@@ -20,7 +20,6 @@ function addNewTask() {
 
 function clearText() {
     document.querySelector("#newTaskText").value = "";
-    document.querySelector("#newListText").value = "";
 };
 
 function removeTask(task) {
@@ -33,8 +32,6 @@ function showTextArea() {
 
 function hideTextArea(){
     $("#newTaskText").css("display", "none");
-    $("#newListText").css("display", "none");
-
 }
 
 function openMenu() {
@@ -44,36 +41,54 @@ function openMenu() {
 
 }
 
-// function goToMyList() {
-//     $("#allLists .taskList:visible").hide();
-//     $("#myList").show();
-//     $("h1").text("My List");
-//     $("#addTask").show();
-//     // $(".menu").toggle("left");
-//     $(".menu").animate({width:'toggle'}, 350);
-
-// }
-
-// function goToSpain() {
-//     $("#allLists .taskList:visible").hide();
-//     $("#spainList").show();
-//     $("h1").text("Spain Travel List");
-//     $("#addTask").show();
-//     // $(".menu").toggle("left");
-//     $(".menu").animate({width:'toggle'}, 350);
-
-// }
-
-function goToList(name) {
-    console.log($(this));
-    var heading = "temp";
+function goToArizona() {
     $("#allLists .taskList:visible").hide();
-    $(name).show();
-    $("h1").text("temp");
+    $("#arizonaList").show();
+    $("h1").text("Arizona Road Trip");
+    $("#addTask").show();
+    // $(".menu").toggle("left");
+    $(".menu").animate({width:'toggle'}, 350);
+
+}
+
+function goToSpain() {
+    $("#allLists .taskList:visible").hide();
+    $("#spainList").show();
+    $("h1").text("Barcelona Winter Trip");
     $("#addTask").show();
     $(".menu").animate({width:'toggle'}, 350);
 
 }
+
+function goToSpain() {
+    $("#allLists .taskList:visible").hide();
+    $("#spainList").show();
+    $("h1").text("Barcelona Winter Trip");
+    $("#addTask").show();
+    $(".menu").animate({width:'toggle'}, 350);
+
+}
+
+function goToFuture() {
+    $("#allLists .taskList:visible").hide();
+    $("#futureList").show();
+    $("h1").text("Future Trips");
+    $("#addTask").show();
+    $(".menu").animate({width:'toggle'}, 350);
+
+}
+
+//combine goTo fnxs
+// function goToList(name) {
+//     console.log($(this));
+//     // var heading = $(this).text();
+//     $("#allLists .taskList:visible").hide();
+//     $(name).show();
+//     // $("h1").text($(this));
+//     $("#addTask").show();
+//     $(".menu").animate({width:'toggle'}, 350);
+
+// }
 
 function closeMenu() {
     $("#addTask").show();

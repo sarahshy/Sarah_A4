@@ -6,7 +6,7 @@
 
     <body>
         <div class="header">
-            <h1>My List</h1>
+            <h1>Arizona Road Trip</h1>
             <img id="menuicon" src="images/menu_icon.png" onclick="openMenu()">
         </div>
         <div class="menu" style="display:none">
@@ -14,11 +14,9 @@
             <h2 class = "menuHeading">Your travel lists:
             <button id="closeMenuBtn" onclick="closeMenu()">x</button></h2>
             <ul class="menuList">
-                <li onclick="goToList(arizonaList)">Arizona Road Trip</li>
-                <li onclick="goToList(spainList)">Barcelona Winter Trip</li>
-                <li onclick="goToList(futureList)">Future Trips</li>
-<!--                 <li><a href="#" onclick="showMenuTextArea()">+ New List</a></li>
-                    <textarea id="newListText" onkeyup="if(event.keyCode==13) addNewList();" placeholder="Add a new list..."></textarea> -->
+                <li onclick="goToArizona()">Arizona Road Trip</li>
+                <li onclick="goToSpain()">Barcelona Winter Trip</li>
+                <li onclick="goToFuture()">Future Trips</li>
             </ul>
         </div>
         <div id = "allLists">
@@ -45,7 +43,7 @@
                 </ul>
             </div>
         </div>
-        <textarea id="newTaskText" onkeyup="if(event.keyCode==13) addNewTask();" placeholder = "Add a new task..."></textarea>
+        <textarea id="newTaskText" onkeyup="if(event.keyCode==13) addNewTask();" placeholder = "Add a new task..." maxlength="30"></textarea>
         <img id="addTask" class = "button" src="images/addtask.png" onclick="showTextArea()">
 
 
